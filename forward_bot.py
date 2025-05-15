@@ -9,8 +9,7 @@ SESSION  = 'forwarder_session'       # name for the .session file
 # Map “source_channel” → “destination_channel”
 # You can use channel usernames ('@sourcechan') or numeric IDs (e.g. -1001234567890)
 CHANNEL_MAPPING = {
-    '@my_source_channel':   '@my_destination_channel',
-    -1002025087044:       -1002539731328,
+    -1002025087044: -1002539731328,
 }
 
 # —— END CONFIG —— #
