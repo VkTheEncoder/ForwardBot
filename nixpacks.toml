@@ -1,0 +1,9 @@
+[env]
+API_ID           = "1234567"
+API_HASH         = "abcdef1234567890abcdef"
+BOT_TOKEN        = "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
+# your mapping must be a JSON string:
+CHANNEL_MAPPING  = """{"-1002025087044":"-1002539731328"}"""
+
+[start]
+cmd = "python forward_bot.py"
