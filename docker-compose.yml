@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  forwardbot:
+    build: .
+    restart: unless-stopped
+    volumes:
+      # persist the Telethon session file so you don’t re-authorize on each deploy
+      - ./forwarder_session:/app/forwarder_session
+    environment:
+      API_ID: "25341849"
+      API_HASH: "c22013816f700253000e3c24a64db3b6"
+      BOT_TOKEN: "7070027599:AAHJ3zf_UZghJxf32n3bB2UMMb3-_NiC0II"
+      # Note: plain JSON here—no extra quotes or TOML
+      CHANNEL_MAPPING: '{"-1002025087044":"-1002539731328"}'
