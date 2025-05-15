@@ -1,9 +1,11 @@
+# nixpacks.toml
+
 [env]
-API_ID           = "25341849"
-API_HASH         = "c22013816f700253000e3c24a64db3b6"
-BOT_TOKEN        = "7070027599:AAHJ3zf_UZghJxf32n3bB2UMMb3-_NiC0II"
-# your mapping must be a JSON string:
-CHANNEL_MAPPING  = """{"-1002025087044":"-1002539731328"}"""
+API_ID          = "25341849"                                  # your Telegram API ID
+API_HASH        = "c22013816f700253000e3c24a64db3b6"          # your API Hash
+BOT_TOKEN       = "7070027599:AAHJ3zf_UZghJxf32n3bB2UMMb3-_NiC0II"  # your Bot token
+# A JSON‐encoded string mapping source→dest channel IDs:
+CHANNEL_MAPPING = """{"-1002025087044":"-1002539731328"}"""
 
 [start]
 cmd = "python forward_bot.py"
